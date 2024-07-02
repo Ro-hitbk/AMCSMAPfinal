@@ -701,7 +701,7 @@ function rollver(n) {
     dest = period.substr(4, 1) + (parseInt(period.substr(5, 1)) - 1);
     oup += period.substr(4, 4) + "\n";  
   
-  } else if ((parseInt(period.substr(4, 2)) > 15 && (d !== "tcs" || parseInt(period.substr(4,2)) !== 18 )) || (d === "ds" && parseInt(period.substr(4,2)) === 12) ) {
+  } else if ((parseInt(period.substr(4, 2)) > 15 && (d !== "tcs" || parseInt(period.substr(4,2)) !== 18 )) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12) ) {
     oup = `${period.substr(0,6)}\n`;
     const labs = ["CSL-1", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics"];
     const labCode = period.substr(7);
