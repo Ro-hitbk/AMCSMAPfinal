@@ -198,7 +198,7 @@ class MapClass {
       else if (startUpper === "OCL"){
         startUpper = "E3";
       }
-      else if (startUpper === "IAL"){
+      else if (startUpper === "IIL"){
         startUpper = "J4";
       }
       else if (startUpper === "NSL"){
@@ -703,7 +703,7 @@ function rollver(n) {
   
   } else if ((parseInt(period.substr(4, 2)) > 15 && (d !== "tcs" || parseInt(period.substr(4,2)) !== 18 )) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12) ) {
     oup = `${period.substr(0,6)}\n`;
-    const labs = ["CSL-1", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics"];
+    const labs = ["CSL-1", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IIL", "NSL", "SCL","physics"];
     const labCode = period.substr(7);
     const labIndex = labs.indexOf(labCode);
     const labDest = ["M0", "M0" , "M0", "M1", "M2", "E3", "J4", "J3" , "F3", "M0" ];
