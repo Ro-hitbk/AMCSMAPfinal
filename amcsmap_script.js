@@ -412,6 +412,12 @@ class MapClass {
       else if (startUpper === "PHYSICS LAB"){
         startUpper = "M0";
       }
+      else if (startUpper === "UGCC"){
+        startUpper = "M4";
+      }
+      else if (startUpper === "CSRL"){
+        startUpper = "M0";
+      }
       else if(startUpper.length === 4){
         let smtg = startUpper.substr(0,1);
         smtg += startUpper.substr(1,1) - 1;
