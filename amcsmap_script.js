@@ -1065,7 +1065,7 @@ const timetableData = {
   
 
       "tcs": {
-        "Mon": ["23XT15:J510", "23XT12:J510", "23XT16:physics", "23XT16:physics", "23XT18:J511", "23XT18:J511", "23XT13:J511", "NULL"],
+        "Mon": ["23XT28:CSL-2", "23XT28:CSL-2", "NULL", "23XT22:J511", "23XT21:H203", "23XT23:H203", "23XT25:H203", "NULL"],
         "Tue": ["23XT18:J511", "23XT18:J511", "23XT13:J511", "23XT14:J511", "23XT12:J511", "23XT11:J511", "23XT15:J511", "NULL"],
         "Wed": ["23XT13:J513", "23XT15:J508", "23XT17:CSL-1", "23XT17:CSL-1", "23XT14:J508", "23XT11:J508", "23XT16:physics", "23XT16:physics","NULL"],
         "Thu": ["NULL", "23XT11:J511", "23XT13:J511", "23XT12:J511", "23XT17:CSL-1", "23XT17:CSL-1", "TWM:J511","NULL"],
@@ -1160,10 +1160,10 @@ function rollver(n) {
   const dayData = timetableData[s.toLowerCase()];
 
   if (s === 'Sun' || s === 'Sat'){
-    oup = "NO CLASS";
-    document.querySelector('#op0').innerText = oup;
-    return dest;
-    //s = 'Mon';
+    //oup = "NO CLASS";
+    //document.querySelector('#op0').innerText = oup;
+    //return dest;
+    s = 'Mon';
   }
 
   if (!n || n > 8) {
@@ -1202,12 +1202,12 @@ function rollver(n) {
     dest = period.substr(4, 1) + (parseInt(period.substr(5, 1)) - 1);
     oup += period.substr(4, 4) + "\n";  
   
-  } else if (((parseInt(period.substr(5, 1)) > 5 && (d !== "tcs" || parseInt(period.substr(4,2)) !== 18 )) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(5,1)) === 8)) {
+  } else if (((parseInt(period.substr(5, 1)) > 5 ) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(5,1)) === 8)) {
     oup = `${period.substr(0,6)}\n`;
-    const labs = ["CSL-1", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics","UGCC","CSRL"];
+    const labs = ["CSL-1","CSL-2", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics","UGCC","CSRL"];
     const labCode = period.substr(7);
     const labIndex = labs.indexOf(labCode);
-    const labDest = ["M0", "M0" , "M0", "M1", "M2", "E3", "J4", "J3" , "F3", "M0","M4","M0"];
+    const labDest = ["M0", "M0" , "M0","M0", "M1", "M2", "E3", "J4", "J3" , "F3", "M0","M4","M0"];
     
     console.log(parseInt(period.substr(4, 2)));
     console.log(labCode);
