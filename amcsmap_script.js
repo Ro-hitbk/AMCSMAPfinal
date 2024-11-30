@@ -1079,7 +1079,7 @@ const timetableData = {
         "Fri": ["23XD18:physics", "23XD18:physics", "23XD16:NSL", "23XD16:NSL", "23XD14:J511", "23XD11:J511", "TWM:J511", "NULL"]
       },
       "ss": {
-        "Mon": ["23XW18:physics", "23XW18:physics", "23XW11:J510", "23XW14:J510", "SMR:J510", "23XW17:CSL-1", "23XW17:CSL-1", "NULL"],
+        "Mon": ["23XW26:CSL-1", "23XW26:CSL-1", "23XW21:H203", "23XW22:H203", "23XW21:J513", "23XW28:CSL-2", "23XW28:CSL-2", "NULL"],
         "Tue": ["23XW16:DSL", "23XW16:DSL", "23XW13:J510", "23XW15:J510", "23XW14:J510", "23XW12:J510", "23XW11:J510", "NULL"],
         "Wed": ["23XW14:J510", "23XW12:J510", "23XW11:J510", "23XW15:J510", "23XW18:physics", "23XW18:physics", "23XW13:J510", "NULL"],
         "Thu": ["23XW17:CSL-1", "23XW17:CSL-1", "23XW11:J510", "TWM:J510", "23XW15:J510", "23XW13:J510", "23XW14:J510", "NULL"],
