@@ -1066,14 +1066,14 @@ const timetableData = {
 
       "tcs": {
         "Mon": ["23XT28:CSL-2", "23XT28:CSL-2", "NULL", "23XT22:J511", "23XT21:H203", "23XT23:H203", "23XT25:H203", "NULL"],
-        "Tue": ["23XT18:J511", "23XT18:J511", "23XT13:J511", "23XT14:J511", "23XT12:J511", "23XT11:J511", "23XT15:J511", "NULL"],
+        "Tue": ["23XT21:H203", "23XT24:H203", "23XT26:CSL-1", "23XT26:CSL-1", "23XT27:CSL-2", "23XT27:CSL-2", "23XT22:J513", "NULL"],
         "Wed": ["23XT13:J513", "23XT15:J508", "23XT17:CSL-1", "23XT17:CSL-1", "23XT14:J508", "23XT11:J508", "23XT16:physics", "23XT16:physics","NULL"],
         "Thu": ["NULL", "23XT11:J511", "23XT13:J511", "23XT12:J511", "23XT17:CSL-1", "23XT17:CSL-1", "TWM:J511","NULL"],
         "Fri": ["NULL", "23XT11:J510", "23XT14:J510", "23XT11:J510", "23XT14:J510", "SMR:J510", "23XT15:J510", "NULL"]
       },
       "ds": {
         "Mon": ["23XD27:OSL", "23XD27:OSL", "23XD22:M202", "23XD21:M202", "23XD23:M202", "23XD28:CSL-1", "23XD28:CSL-1", "NULL"],
-        "Tue": ["23XD11:J512", "23XD12:J512", "23XD12:J512", "23XD13:J512", "23XD17:CSL-1", "23XD17:CSL-1", "23XD15:J512", "NULL"],
+        "Tue": ["23XD22:H204", "23XD23:H204", "23XD27:CSL-3", "23XD27:CSL-3", "23XD21:H203", "23XD25:H203", "23XD24:H203", "NULL"],
         "Wed": ["23XD17:CSL-1", "23XD17:CSL-1", "23XD15:J511", "23XD12:J511", "23XD16:NSL", "23XD16:NSL", "NULL", "NULL"],
         "Thu": ["23XD12:J512", "23XD13:J512", "23XD14:J512", "23XD11:J512", "SMR:J512", "23XD13:J512", "23XD11:J512", "NULL"],
         "Fri": ["23XD18:physics", "23XD18:physics", "23XD16:NSL", "23XD16:NSL", "23XD14:J511", "23XD11:J511", "TWM:J511", "NULL"]
@@ -1163,7 +1163,7 @@ function rollver(n) {
     //oup = "NO CLASS";
     //document.querySelector('#op0').innerText = oup;
     //return dest;
-    s = 'Mon';
+    s = 'Tue';
   }
 
   if (!n || n > 8) {
