@@ -1093,14 +1093,14 @@ const timetableData = {
         "Fri": ["23XC16:DSL", "23XC16:DSL", "23XC18:physics", "23XC18:physics", "23XC15:J508", "23XC13:J508", "23XC14:J508", "NULL"]
       },
       "am": {
-      "Mon": ["NULL", "23SA12:M504", "23SA16:J513", "NULL", "23SA14:H203", "TWM:H203", "NULL", "NULL"],
+      "Mon": ["SMR:A112", "23SA24:A112", "23SA77:A313", "23SA21:M504", "23SA27:CSRL", "23SA27:CSRL", "TWM:M504", "NULL"],
       "Tue": ["23SA13:A112", "23SA17:A112", "23SA15:A112", "23SA11:A112", "23SA14:A112", "23SA12:A112", "SMR:A112", "NULL"],
       "Wed": ["23SA18:CSRL", "23SA18:CSRL", "23SA15:A112", "23SA12:A112", "23SA11:M504", "23SA14:M504", "NULL", "NULL"],
       "Thu": ["23SA18:CSRL", "23SA18:CSRL", "23SA14:A112", "23SA11:A112", "23SA15:A112", "23SA16:A112", "23SA13:A112", "NULL"],
       "Fri": ["NULL", "23SA14:M202", "NULL", "23SA12:J515", "23SA17:M202", "23SA16:M202", "23SA13:M202", "NULL"]
       },
       "csd": {
-      "Mon": ["NULL", "24X101:A106", "24X103:A106", "24X102:A106", "NULL", "23X105:A106", "23X106:UGCC", "23X106:UGCC"],
+      "Mon": ["NULL", "24X203:K502","24X201:K502", "24X204:K502", "24X202:K502", "TWM:K502", "24X205:K502", "NULL"],
       "Tue": ["NULL", "24X104:A106", "24X103:A106", "24X101:A106", "24X108:physics", "24X108:physics", "24X108:physics", "NULL"],
       "Wed": ["24X107:UGCC", "24X107:UGCC", "24X102:A106", "24X104:A106", "NULL", "24X105:A106", "SMR:A106", "NULL"],
       "Thu": ["24X106:UGCC", "24X106:UGCC", "24X104:A106", "24X103:A106", "24X101:A106", "TWM:A106", "24X107:UGCC", "24X107:UGCC"],
@@ -1202,7 +1202,7 @@ function rollver(n) {
     dest = period.substr(4, 1) + (parseInt(period.substr(5, 1)) - 1);
     oup += period.substr(4, 4) + "\n";  
   
-  } else if (((parseInt(period.substr(5, 1)) > 5 ) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(5,1)) === 8)) {
+  } else if (((parseInt(period.substr(5, 1)) > 5 ) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(4,2)) !== 77)) {
     oup = `${period.substr(0,6)}\n`;
     const labs = ["CSL-1","CSL-2", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics","UGCC","CSRL"];
     const labCode = period.substr(7);
