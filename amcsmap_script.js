@@ -1065,47 +1065,49 @@ const timetableData = {
   
 
       "tcs": {
-        "Mon": ["23XT28:CSL-2", "23XT28:CSL-2", "NULL", "23XT22:J511", "23XT21:H203", "23XT23:H203", "23XT25:H203", "NULL"],
-        "Tue": ["23XT21:H203", "23XT24:H203", "23XT26:CSL-1", "23XT26:CSL-1", "23XT27:CSL-2", "23XT27:CSL-2", "23XT22:J513", "NULL"],
-        "Wed": ["23XT27:CSL-1", "23XT27:CSL-1", "23XT22:M504", "23XT24:M504", "23XT25:M504", "23XT23:M504", "SMR:M504","NULL"],
-        "Thu": ["NULL", "23XT11:J511", "23XT13:J511", "23XT12:J511", "23XT17:CSL-1", "23XT17:CSL-1", "TWM:J511","NULL"],
-        "Fri": ["NULL", "23XT11:J510", "23XT14:J510", "23XT11:J510", "23XT14:J510", "SMR:J510", "23XT15:J510", "NULL"]
+      "Mon": ["23XT11:J510", "23XT12:J510", "23XT16:physics", "23XT16:physics", "23XT15:J508", "23XT14:J508", "23XT14:J508", "NULL"],
+      "Tue": ["NULL", "23XT13:J511", "23XT18:J202", "23XT18:J202", "23XT12:J511", "23XT17:CSL2", "23XT17:CSL2", "NULL"],
+      "Wed": ["TWM:J510", "23XT11:J510", "23XT12:J510", "23XT13:J510", "23XT15:J510", "23XT14:J510", "23XT16:physics", "23XT16:physics"],
+      "Thu": ["23XT11:J511", "23XT14:J511", "23XT15:J511", "23XT13:J511", "23XT18:J202", "23XT18:J202", "23XT13:J202", "NULL"],
+      "Fri": ["23XT17:DSL", "23XT17:DSL", "23XT15:J508", "23XT14:J508", "LIB", "SMR:J511", "23XT11:J511", "NULL"]
       },
       "ds": {
-        "Mon": ["23XD27:OSL", "23XD27:OSL", "23XD22:M202", "23XD21:M202", "23XD23:M202", "23XD28:CSL-1", "23XD28:CSL-1", "NULL"],
-        "Tue": ["23XD22:H204", "23XD23:H204", "23XD27:CSL-3", "23XD27:CSL-3", "23XD21:H203", "23XD25:H203", "23XD24:H203", "NULL"],
-        "Wed": ["23XD25:H204", "23XD24:H204", "23XD26:CSL-1", "23XD26:CSL-1", "23XD25:M201", "23XD21:M201", "23XD22:M201", "NULL"],
-        "Thu": ["23XD12:J512", "23XD13:J512", "23XD14:J512", "23XD11:J512", "SMR:J512", "23XD13:J512", "23XD11:J512", "NULL"],
-        "Fri": ["23XD18:physics", "23XD18:physics", "23XD16:NSL", "23XD16:NSL", "23XD14:J511", "23XD11:J511", "TWM:J511", "NULL"]
+        "Mon": ["23XD11:J511", "23XD15:J511", "23XD16:OCL", "23XD16:OCL", "23XD14:J511", "23XD12:J511", "23XD13:J511", "NULL"],
+        "Tue": ["23XD14:J512", "23XD13:J512", "23XD17:CSL2", "23XD17:CSL2", "23XD11:J508", "23XD12:J508", "SMR:J508", "NULL"],
+        "Wed": ["23XD16:DSL", "23XD16:DSL", "23XD15:J511", "23XD13:J511", "23XD11:J511", "23XD14:J511", "NULL", "NULL"],
+        "Thu": ["23XD12:J512", "23XD15:J512", "23XD11:J512", "23XD14:J512", "23XD13:J508", "23XD17:OSL", "23XD17:OSL", "NULL"],
+        "Fri": ["23XD18:physics", "23XD18:physics", "23XD12:J512", "23XD12:J512", "LIB", "TWM:J512", "23XD11:J512", "NULL"]
       },
       "ss": {
-        "Mon": ["23XW26:CSL-1", "23XW26:CSL-1", "23XW21:H203", "23XW22:H203", "23XW21:J513", "23XW28:CSL-2", "23XW28:CSL-2", "NULL"],
-        "Tue": ["23XW27:CSL-1", "23XW27:CSL-1", "23XW23:J202", "23XW22:J202", "23XW25:K502", "NULL", "NULL", "NULL"],
-        "Wed": ["23XW24:J512", "23XW22:J512", "23XW25:M202", "23XW21:M202", "23XW23:M202", "23XW26:CSL-2", "23XW26:CSL-2", "NULL"],
-        "Thu": ["23XW17:CSL-1", "23XW17:CSL-1", "23XW11:J510", "TWM:J510", "23XW15:J510", "23XW13:J510", "23XW14:J510", "NULL"],
-        "Fri": ["23XW11:J508", "23XW13:J508", "23XW15:J508", "23XW12:J508", "23XW16:NSL", "23XW16:NSL", "NULL", "NULL"]
+        "Mon":   ["23XW18:physics", "23XW18:physics", "23XW15:J510", "23XW14:J510","23XW17:DSL", "23XW17:DSL", "23XW13:J5103", "NULL"],
+        "Tue":   ["TWM:J510", "23XW12:J510", "23XW11:J510", "23XW13:J510", "23XW14:J510", "23XW15:J510", "23XW11:J510","NULL"],
+        "Wed":   ["23XW16:OCL", "23XW16:OCL", "23XW14:J508", "23XW12:J508", "23XW18:physics", "23XW18:physics", "23XW11:J510", "NULL"],
+        "Thu":   ["LIB", "23XW13:J510", "23XW11:J510", "23XW15:J510", "23XW14:J510","23XW12:J510", "SMR:J510", "NULL"],
+        "Fri":   ["23XW13:J510", "23XW11:J510", "23XW17:CSL2", "23XW17:CSL2", "23XW16:OCL", "23XW16:OCL", "23XW15:J510", "NULL"]
       },
       "cs": {
-        "Mon": ["23XC21:M201", "23XC23:M201", "23XC22:M201", "23XC24:M201", "23XC25:M201", "SMR:M201", "NULL", "NULL"],
-        "Tue": ["23XC26:OSL", "23XC26:OSL", "23XC21:H204", "23XC22:H204", "23XC21:H204", "23XC28:CSL-3", "23XC28:CSL-3", "NULL"],
-        "Wed": ["TWM:J513", "23XC22:J513", "23XC27:CSL-3", "23XC27:CSL-3", "23XC24:H204", "23XC21:H204", "23XC23:H204", "NULL"],
-        "Thu": ["23XC17:CSL-3", "23XC17:CSL-3", "23XC15:J508", "NULL", "23XC14:J508", "23XC11:J508", "23XC12:J508", "NULL"],
-        "Fri": ["23XC16:DSL", "23XC16:DSL", "23XC18:physics", "23XC18:physics", "23XC15:J508", "23XC13:J508", "23XC14:J508", "NULL"]
+      "Mon": ["23XC15:J508", "23XC14:J508", "23XC12:J508", "23XC13:J508", "23XC16:OCL", "23XC16:OCL", "NULL","NULL"],
+      "Tue": ["23XC13:J508", "23XC11:J508", "23XC15:J508", "TWM:J508", "23XC17:CSL3", "23XC17:CSL3", "23XC14:J508"],
+      "Wed": ["23XC14:J508", "23XC15:J508", "23XC17:CSL2","23XC17:CSL2", "23XC11:J508", "23XC12:J508", "SMR", "NULL"],
+      "Thu": ["LIB", "23XC11:J508", "23XC13:J508","23XC14:J508", "23XC16:OCL", "23XC16:OCL",  "23XC11:J508", "NULL"],
+      "Fri": ["23XC11:J508", "23XC12:J508", "23XC18:physics", "23XC18:physics", "23XC14:J508", "23XC13:J508", "23XC15:J508", "NULL"]
       },
       "am": {
-      "Mon": ["SMR:A112", "23SA24:A112", "23SA77:A313", "23SA21:M504", "23SA27:CSRL", "23SA27:CSRL", "TWM:M504", "NULL"],
-      "Tue": ["23SA23:M202", "23SA21:M202", "23SA25:CSRL", "23SA25:CSRL", "23SA22:A112", "23SA24:A112", "23SA25:A112", "NULL"],
-      "Wed": ["23SA24:M504", "23SA25:M504", "23SA26:CSRL", "23SA26:CSRL", "23SA77:A112", "23SA27:CSRL", "23SA27:CSRL", "NULL"],
-      "Thu": ["23SA18:CSRL", "23SA18:CSRL", "23SA14:A112", "23SA11:A112", "23SA15:A112", "23SA16:A112", "23SA13:A112", "NULL"],
-      "Fri": ["NULL", "23SA14:M202", "NULL", "23SA12:J515", "23SA17:M202", "23SA16:M202", "23SA13:M202", "NULL"]
+      "Mon": ["NULL", "23SA15:A112", "23SA18:CSRL", "23SA18:CSRL", "23SA12:A112", "23SA11:A112", "23SA14:A112", "NULL"],
+      "Tue": ["23SA12:A112", "23SA16:A112", "NULL", "23SA17:A112", "23SA14:A112", "23SA15:A112", "LIB", "NULL"],
+      "Wed": ["23SA14:A112", "23SA13:A112", "23SA15:A112", "23SA11:A112", "23SA16:A112", "NULL", "TWM:J512", "NULL"],
+      "Thu": ["23SA18:CSRL", "23SA18:CSRL", "23SA12:A112", "23SA13:A112", "23SA14:A112", "SMR:A112", "23SA17:A112", "NULL"],
+      "Fri": ["NULL","23SA11:A112", "23SA13:A112", "23SA14:A112", "23SA12:A112", "23SA16:A112", "NULL", "NULL"]
       },
+
       "csd": {
-      "Mon": ["NULL", "24X203:K502","24X201:K502", "24X204:K502", "24X202:K502", "TWM:K502", "24X205:K502", "NULL"],
-      "Tue": ["24X208:UGCC", "24X208:UGCC", "24X205:K502", "24X202:K502", "NULL", "SMR:K502", "24X201:K502", "NULL"],
-      "Wed": ["24X202:K502", "24X201:K502", "24X205:K502", "24X206:UGCC", "24X206:UGCC", "24X208:UGCC", "24X208:UGCC", "NULL"],
-      "Thu": ["24X106:UGCC", "24X106:UGCC", "24X104:A106", "24X103:A106", "24X101:A106", "TWM:A106", "24X107:UGCC", "24X107:UGCC"],
-      "Fri": ["NULL", "24X105:A106", "24X101:A106", "24X104:A106", "NULL", "24X103:A106", "24X102:A105", "NULL"]
-    }
+      "Mon": ["24X107:UGCC", "24X107:UGCC", "24X101:K502", "24X103:K502", "24X105:K502", "24X102:K502", "24X106:UGCC", "24X106:UGCC"],
+      "Tue": ["24X102:K502", "NULL","24X103:K502", "LIB", "24X108:physics", "24X108:physics", "24X108:physics", "24X108:physics"],
+      "Wed": ["24X104:K502", "24X105:K502", "24X102:K502", "24X101:K502", "24X103:K502", "NULL", "SMR:K502", "NULL"],
+      "Thu": ["NULL","TWM:M503", "24X105:K502", "24X101:K502", "24X102:K502", "24X103:K502", "24X104:K502", "NULL"],
+      "Fri": ["24X106:UGCC", "24X106:UGCC", "24X101:K502", "24X104:K502", "24X107:UGCC", "24X107:UGCC", "NULL", "NULL"]
+      }
+
 
 };
 
@@ -1160,10 +1162,10 @@ function rollver(n) {
   const dayData = timetableData[s.toLowerCase()];
   
   if (s === 'Sun' || s === 'Sat'){
-    oup = "NO CLASS";
-    document.querySelector('#op0').innerText = oup;
-    return dest;
-    //s = 'Wed';
+    //oup = "NO CLASS";
+    //document.querySelector('#op0').innerText = oup;
+    //return dest;
+    s = 'Mon';
   }
 
   if (!n || n > 8) {
@@ -1202,7 +1204,7 @@ function rollver(n) {
     dest = period.substr(4, 1) + (parseInt(period.substr(5, 1)) - 1);
     oup += period.substr(4, 4) + "\n";  
   
-  } else if (( d==="am" && parseInt(period.substr(5,1)) === 5 && ((n === 3)||(n === 4))) || ((parseInt(period.substr(5, 1)) > 5 ) || (s === 'Mon' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(4,2)) !== 77) ) {
+  } else if (( d==="am" && parseInt(period.substr(5,1)) === 5 && ((n === 3)||(n === 4))) || ((parseInt(period.substr(5, 1)) > 5 ) || (s === 'Fri' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(4,2)) !== 77) ) {
     oup = `${period.substr(0,6)}\n`;
     const labs = ["CSL-1","CSL-2", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics","UGCC","CSRL"];
     const labCode = period.substr(7);
