@@ -1161,11 +1161,11 @@ function rollver(n) {
  let s = currentDay.substr(0, 3);
  const dayData = timetableData[s.toLowerCase()];
  
- if (s === 'Tue' || s === 'Sat'){
- //oup = "NO CLASS";
- //document.querySelector('#op0').innerText = oup;
- //return dest;
- s = 'Wed';
+ if (s === 'Sun' || s === 'Sat'){
+ oup = "NO CLASS";
+ document.querySelector('#op0').innerText = oup;
+ return dest;
+ //s = '';
  }
 
  if (!n || n > 8) {
