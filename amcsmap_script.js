@@ -1073,7 +1073,7 @@ const timetableData = {
  },
  "ds": {
  "Mon": ["23XD11:J511", "23XD15:J511", "23XD16:OCL", "23XD16:OCL", "23XD14:J511", "23XD12:J511", "23XD13:J511", "NULL"],
- "Tue": ["23XD14:J512", "23XD13:J512", "23XD17:CSL2", "23XD17:CSL2", "23XD11:J508", "23XD12:J508", "SMR:J508", "NULL"],
+ "Tue": ["23XD14:J512", "23XD13:J512", "23XD17:CSL-2", "23XD17:CSL-2", "23XD11:J508", "23XD12:J508", "SMR:J508", "NULL"],
  "Wed": ["23XD16:DSL", "23XD16:DSL", "23XD15:J511", "23XD13:J511", "23XD11:J511", "23XD14:J511", "NULL", "NULL"],
  "Thu": ["23XD12:J512", "23XD15:J512", "23XD11:J512", "23XD14:J512", "23XD13:J508", "23XD17:OSL", "23XD17:OSL", "NULL"],
  "Fri": ["23XD18:physics", "23XD18:physics", "23XD12:J512", "23XD12:J512", "LIB", "TWM:J512", "23XD11:J512", "NULL"]
@@ -1083,7 +1083,7 @@ const timetableData = {
  "Tue": ["TWM:J510", "23XW12:J510", "23XW11:J510", "23XW13:J510", "23XW14:J510", "23XW15:J510", "23XW11:J510","NULL"],
  "Wed": ["23XW16:OCL", "23XW16:OCL", "23XW14:J508", "23XW12:J508", "23XW18:physics", "23XW18:physics", "23XW11:J510", "NULL"],
  "Thu": ["LIB", "23XW13:J510", "23XW11:J510", "23XW15:J510", "23XW14:J510","23XW12:J510", "SMR:J510", "NULL"],
- "Fri": ["23XW13:J510", "23XW11:J510", "23XW17:CSL2", "23XW17:CSL2", "23XW16:OCL", "23XW16:OCL", "23XW15:J510", "NULL"]
+ "Fri": ["23XW13:J510", "23XW11:J510", "23XW17:CSL-2", "23XW17:CSL-2", "23XW16:OCL", "23XW16:OCL", "23XW15:J510", "NULL"]
  },
  "cs": {
  "Mon": ["23XC15:J508", "23XC14:J508", "23XC12:J508", "23XC13:J508", "23XC16:OCL", "23XC16:OCL", "NULL","NULL"],
@@ -1165,7 +1165,7 @@ function rollver(n) {
  oup = "NO CLASS";
  document.querySelector('#op0').innerText = oup;
  return dest;
- //s = '';
+ //s = 'Thu';
  }
 
  if (!n || n > 8) {
@@ -1211,7 +1211,7 @@ function rollver(n) {
  dest = period.substr(4, 1) + (parseInt(period.substr(5, 1)) - 1);
  oup += period.substr(4, 4) + "\n"; 
  
- } else if (( d==="am" && (parseInt(period.substr(5, 1)) === 8)) || (d!=="am") && ((parseInt(period.substr(5, 1)) > 5 && (parseInt(period.substr(5, 1)) !== 8 || d !== "tcs")) || (s === 'Fri' && d === "ds" && parseInt(period.substr(4,2)) === 12)) && (d !== "am" || parseInt(period.substr(4,2)) !== 77) ) {
+ } else if ((d!=="am" || parseInt(period.substr(5, 1)) === 8) && ((parseInt(period.substr(5, 1)) > 5 && (parseInt(period.substr(5, 1)) !== 8 || d !== "tcs")) ) ) {
  oup = `${period.substr(0,6)}\n`;
  const labs = ["CSL-1","CSL-2", "CSL-3" , "DSL", "OSL", "SIL", "OCL", "IAL", "NSL", "SCL","physics","UGCC","CSRL"];
  const labCode = period.substr(7);
