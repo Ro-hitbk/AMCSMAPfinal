@@ -252,3 +252,7 @@ canvas {
   border: 1px solid black;
   margin-top: 8px;
 }
+
+.ip::placeholder {
+  font-size: 11px; 
+}
